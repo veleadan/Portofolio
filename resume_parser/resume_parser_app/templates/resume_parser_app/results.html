@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        pre {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-left: 4px solid #007BFF;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 40px;
+        }
+        li {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <p><a href="/">Upload another resume</a></p>
+    <h1>Resume Processing Results</h1>
+    <p><strong>File:</strong> {{ resume.file.name }}</p>
+    <h2>Extracted Text:</h2>
+    <pre>{{ resume.extracted_text }}</pre>
+    <h2>Keyword Matches:</h2>
+    <ul>
+        {% for keyword, freq in matches.items %}
+        <li><strong>{{ keyword }}:</strong> {{ freq }}</li>
+        {% endfor %}
+    </ul>
+</div>
+</body>
+</html>
