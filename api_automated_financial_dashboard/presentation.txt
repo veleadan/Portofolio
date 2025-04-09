@@ -1,0 +1,41 @@
+Project Title: Stock Price Prediction and Automated Sentiment Analysis Dashboard
+
+Description: Designed and developed a Python-based dashboard to analyze stock price trends and perform sentiment analysis on
+relevant news articles for a selected company. This project integrates APIs, data visualization, and sentiment analysis,
+empowering users with critical insights into stock performance and market sentiment.
+
+Key Features:
+Stock Price Analysis:
+Utilized the Alpha Vantage API to retrieve daily stock price data for a selected company (e.g., Amazon, Apple) and stored the data in a structured format (CSV).
+Implemented Matplotlib visualizations to plot historical stock prices, dynamically scaling the X-axis (dates) and Y-axis (close prices) for better readability.
+
+Automated News Sentiment Analysis:
+Fetched real-time news articles related to the selected stock/company using Google News' RSS feed.
+Integrated the VADER Sentiment Analysis module to analyze headlines and determine the sentiment polarity (positive, neutral, negative).
+Displayed and stored sentiment-scored news headlines with metadata (publish date, source link).
+
+Data Storage:
+Saved fetched stock pricing and news sentiment data into CSV files for future use or detailed analysis.
+
+User-Friendly Enhancements:
+Handled varying data formats by dynamically processing date and numerical fields.
+Implemented techniques for clear visualization, such as limiting X-axis ticks, formatting Y-axis values, and dynamically scaling graphs.
+
+Technical Stack:
+Programming Language: Python 3.12
+APIs Used: Alpha Vantage API, Google News RSS Feed
+Libraries:
+    Data Processing:    Pandas
+    Visualization:      Matplotlib
+    Sentiment Analysis: VADER SentimentIntensityAnalyzer (NLTK)
+    Data Storage:       CSV format for stock price and sentiment details
+
+Goals and Challenges Addressed:
+Ensured proper handling and transformation of raw date fields into readable formats for plotting.
+Customized graphical visualization to prevent overlaps of X-axis and Y-axis labels.
+Automated filtering of meaningful news headlines by applying sentiment thresholds, ensuring only impactful pieces were presented.
+
+Outcome/Key Takeaways:
+Demonstrated the ability to integrate external APIs and perform robust data analysis.
+Showcased proficiency in dynamic visualization to assist in uncovering trends in stock performance.
+Developed a comprehensive automated workflow for fetching, analyzing, and storing market-related data.
