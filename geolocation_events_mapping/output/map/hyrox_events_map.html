@@ -1,0 +1,1841 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0e65a0d0988c0d9e79819e5be14495f3 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_0e65a0d0988c0d9e79819e5be14495f3" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0e65a0d0988c0d9e79819e5be14495f3 = L.map(
+                "map_0e65a0d0988c0d9e79819e5be14495f3",
+                {
+                    center: [20.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_af790106a75a3cd817054dda1c2765bd = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_af790106a75a3cd817054dda1c2765bd.addTo(map_0e65a0d0988c0d9e79819e5be14495f3);
+        
+    
+            var marker_cluster_26f52ce5cba1b155decfdfb8ea2473a6 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_19c408d22c9b4037926079bf52710ceb = L.marker(
+                [-33.8698439, 151.2082848],
+                {
+}
+            ).addTo(marker_cluster_26f52ce5cba1b155decfdfb8ea2473a6);
+        
+    
+            var icon_e88e1c8b0c5aa5c77edd9d81d1a0beb4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a76a59246222ad65a0c84f69e3651963 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_928bf28d2fe7a207a5a317f0da9a07a2 = $(`<div id="html_928bf28d2fe7a207a5a317f0da9a07a2" style="width: 100.0%; height: 100.0%;">                 <div style='font-family: Arial, sans-serif;'>                     <h3 style='color: #333; margin-bottom: 10px;'>F45 HYROX Sydney</h3>                     <p style='margin: 5px 0;'><strong>Date:</strong> SYD</p>                     <p style='margin: 5px 0;'><strong>Location:</strong> Sydney</p>                     <a href="https://hyrox.com/event/hyrox-sydney/" target="_blank"                         style='display: inline-block;                                background-color: #007bff;                                color: white;                                padding: 5px 10px;                                text-decoration: none;                                border-radius: 3px;                                margin-top: 10px;'>                         Event Details                     </a>                 </div>                 </div>`)[0];
+                popup_a76a59246222ad65a0c84f69e3651963.setContent(html_928bf28d2fe7a207a5a317f0da9a07a2);
+            
+        
+
+        marker_19c408d22c9b4037926079bf52710ceb.bindPopup(popup_a76a59246222ad65a0c84f69e3651963)
+        ;
+
+        
+    
+    
+            marker_19c408d22c9b4037926079bf52710ceb.bindTooltip(
+                `<div>
+                     Sydney
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_19c408d22c9b4037926079bf52710ceb.setIcon(icon_e88e1c8b0c5aa5c77edd9d81d1a0beb4);
+            
+    
+            var marker_4d8f396fe7a0899ad1262f44c4273c0c = L.marker(
+                [-33.9288301, 18.4172197],
+                {
+}
+            ).addTo(marker_cluster_26f52ce5cba1b155decfdfb8ea2473a6);
+        
+    
+            var icon_d6fff9a081e58429a9cc45955a42746c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e379c046fa9eb9c81579a45ca1e4cad6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3881323059572b01cb2bced0ab207512 = $(`<div id="html_3881323059572b01cb2bced0ab207512" style="width: 100.0%; height: 100.0%;">                 <div style='font-family: Arial, sans-serif;'>                     <h3 style='color: #333; margin-bottom: 10px;'>HYROX Cape Town</h3>                     <p style='margin: 5px 0;'><strong>Date:</strong> CPT</p>                     <p style='margin: 5px 0;'><strong>Location:</strong> Cape Town</p>                     <a href="https://hyrox.com/event/hyrox-cape-town/" target="_blank"                         style='display: inline-block;                                background-color: #007bff;                                color: white;                                padding: 5px 10px;                                text-decoration: none;                                border-radius: 3px;                                margin-top: 10px;'>                         Event Details                     </a>                 </div>                 </div>`)[0];
+                popup_e379c046fa9eb9c81579a45ca1e4cad6.setContent(html_3881323059572b01cb2bced0ab207512);
+            
+        
+
+        marker_4d8f396fe7a0899ad1262f44c4273c0c.bindPopup(popup_e379c046fa9eb9c81579a45ca1e4cad6)
+        ;
+
+        
+    
+    
+            marker_4d8f396fe7a0899ad1262f44c4273c0c.bindTooltip(
+                `<div>
+                     Cape Town
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4d8f396fe7a0899ad1262f44c4273c0c.setIcon(icon_d6fff9a081e58429a9cc45955a42746c);
+            
+    
+            var marker_5fac84531ea7031f28d4081ac31fd6c5 = L.marker(
+                [24.4538352, 54.3774014],
+                {
+}
+            ).addTo(marker_cluster_26f52ce5cba1b155decfdfb8ea2473a6);
+        
+    
+            var icon_81815ce288f7064cfb217789e8accc1f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4719285cce7caa8c2334b8f5a0b69b7d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7788d7da6d27186ac7c9a4a6ecd29af5 = $(`<div id="html_7788d7da6d27186ac7c9a4a6ecd29af5" style="width: 100.0%; height: 100.0%;">                 <div style='font-family: Arial, sans-serif;'>                     <h3 style='color: #333; margin-bottom: 10px;'>HYROX Abu Dhabi</h3>                     <p style='margin: 5px 0;'><strong>Date:</strong> AUH</p>                     <p style='margin: 5px 0;'><strong>Location:</strong> Abu Dhabi</p>                     <a href="https://hyrox.com/event/hyrox-abu-dhabi/" target="_blank"                         style='display: inline-block;                                background-color: #007bff;                                color: white;                                padding: 5px 10px;                                text-decoration: none;                                border-radius: 3px;                                margin-top: 10px;'>                         Event Details                     </a>                 </div>                 </div>`)[0];
+                popup_4719285cce7caa8c2334b8f5a0b69b7d.setContent(html_7788d7da6d27186ac7c9a4a6ecd29af5);
+            
+        
+
+        marker_5fac84531ea7031f28d4081ac31fd6c5.bindPopup(popup_4719285cce7caa8c2334b8f5a0b69b7d)
+        ;
+
+        
+    
+    
+            marker_5fac84531ea7031f28d4081ac31fd6c5.bindTooltip(
+                `<div>
+                     Abu Dhabi
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5fac84531ea7031f28d4081ac31fd6c5.setIcon(icon_81815ce288f7064cfb217789e8accc1f);
+            
+    
+            var marker_d7983d43ea7e7e3e10aa190cea70b463 = L.marker(
+                [28.6273928, 77.1716954],
+                {
+}
+            ).addTo(marker_cluster_26f52ce5cba1b155decfdfb8ea2473a6);
+        
+    
+            var icon_d5731b321df257785c2d4c795219c2da = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c940de32b3a1a8d81d233ba192a7ba4b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e1d6ba72b4dfb3b0ef5965dc84b3a8a2 = $(`<div id="html_e1d6ba72b4dfb3b0ef5965dc84b3a8a2" style="width: 100.0%; height: 100.0%;">                 <div style='font-family: Arial, sans-serif;'>                     <h3 style='color: #333; margin-bottom: 10px;'>HYROX DELHI</h3>                     <p style='margin: 5px 0;'><strong>Date:</strong> DEL</p>                     <p style='margin: 5px 0;'><strong>Location:</strong> DELHI</p>                     <a href="https://hyrox.com/event/hyrox-delhi/" target="_blank"                         style='display: inline-block;                                background-color: #007bff;                                color: white;                                padding: 5px 10px;                                text-decoration: none;                                border-radius: 3px;                                margin-top: 10px;'>                         Event Details                     </a>                 </div>                 </div>`)[0];
+                popup_c940de32b3a1a8d81d233ba192a7ba4b.setContent(html_e1d6ba72b4dfb3b0ef5965dc84b3a8a2);
+            
+        
+
+        marker_d7983d43ea7e7e3e10aa190cea70b463.bindPopup(popup_c940de32b3a1a8d81d233ba192a7ba4b)
+        ;
+
+        
+    
+    
+            marker_d7983d43ea7e7e3e10aa190cea70b463.bindTooltip(
+                `<div>
+                     DELHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d7983d43ea7e7e3e10aa190cea70b463.setIcon(icon_d5731b321df257785c2d4c795219c2da);
+            
+    
+            var marker_2f0d597df486e8c10faa021404fb2e3e = L.marker(
+                [22.350627, 114.1849161],
+                {
+}
+            ).addTo(marker_cluster_26f52ce5cba1b155decfdfb8ea2473a6);
+        
+    
+            var icon_b05f1e74c7d22106cdbe5c6764e24edd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b6dc6954fcd9bc0d7ea644d660f1712e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_add1d21cce3f57b8ba52115558e49ad4 = $(`<div id="html_add1d21cce3f57b8ba52115558e49ad4" style="width: 100.0%; height: 100.0%;">                 <div style='font-family: Arial, sans-serif;'>                     <h3 style='color: #333; margin-bottom: 10px;'>Cigna Healthcare HYROX Hong Kong</h3>                     <p style='margin: 5px 0;'><strong>Date:</strong> HKG</p>                     <p style='margin: 5px 0;'><strong>Location:</strong> Hong Kong</p>                     <a href="https://hyrox.com/event/hyrox-hong-kong/" target="_blank"                         style='display: inline-block;                                background-color: #007bff;                                color: white;                                padding: 5px 10px;                                text-decoration: none;                                border-radius: 3px;                                margin-top: 10px;'>                         Event Details                     </a>                 </div>                 </div>`)[0];
+                popup_b6dc6954fcd9bc0d7ea644d660f1712e.setContent(html_add1d21cce3f57b8ba52115558e49ad4);
+            
+        
+
+        marker_2f0d597df486e8c10faa021404fb2e3e.bindPopup(popup_b6dc6954fcd9bc0d7ea644d660f1712e)
+        ;
+
+        
+    
+    
+            marker_2f0d597df486e8c10faa021404fb2e3e.bindTooltip(
+                `<div>
+                     Hong Kong
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2f0d597df486e8c10faa021404fb2e3e.setIcon(icon_b05f1e74c7d22106cdbe5c6764e24edd);
+            
+    
+            var marker_f15020aef0f6f1f3266c6df538d8b1b0 = L.marker(
+                [35.4503381, 139.6343802],
+                {
+}
+            ).addTo(marker_cluster_26f52ce5cba1b155decfdfb8ea2473a6);
+        
+    
+            var icon_12df458acdb60268b79bcd4dd5704887 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_19a44a1551113f2f5aad380faa64982e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8a6deda8220c82f9a681db48faeaf803 = $(`<div id="html_8a6deda8220c82f9a681db48faeaf803" style="width: 100.0%; height: 100.0%;">                 <div style='font-family: Arial, sans-serif;'>                     <h3 style='color: #333; margin-bottom: 10px;'>HYROX Yokohama</h3>                     <p style='margin: 5px 0;'><strong>Date:</strong> YOK</p>                     <p style='margin: 5px 0;'><strong>Location:</strong> Yokohama</p>                     <a href="https://hyrox.com/event/hyrox-yokohama/" target="_blank"                         style='display: inline-block;                                background-color: #007bff;                                color: white;                                padding: 5px 10px;                                text-decoration: none;                                border-radius: 3px;                                margin-top: 10px;'>                         Event Details                     </a>                 </div>                 </div>`)[0];
+                popup_19a44a1551113f2f5aad380faa64982e.setContent(html_8a6deda8220c82f9a681db48faeaf803);
+            
+        
+
+        marker_f15020aef0f6f1f3266c6df538d8b1b0.bindPopup(popup_19a44a1551113f2f5aad380faa64982e)
+        ;
+
+        
+    
+    
+            marker_f15020aef0f6f1f3266c6df538d8b1b0.bindTooltip(
+                `<div>
+                     Yokohama
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f15020aef0f6f1f3266c6df538d8b1b0.setIcon(icon_12df458acdb60268b79bcd4dd5704887);
+            
+    
+            var marker_095071875988bd9438245ecfd8098095 = L.marker(
+                [40.190632, 116.412144],
+                {
+}
+            ).addTo(marker_cluster_26f52ce5cba1b155decfdfb8ea2473a6);
+        
+    
+            var icon_1c13e9367a1cc0fa37e36f01c8cb70ba = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8781e45c168500eacbfcbbd413418c04 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b29a6346fd3326c0cdd29ec2dc95e542 = $(`<div id="html_b29a6346fd3326c0cdd29ec2dc95e542" style="width: 100.0%; height: 100.0%;">                 <div style='font-family: Arial, sans-serif;'>                     <h3 style='color: #333; margin-bottom: 10px;'>HYROX Beijing</h3>                     <p style='margin: 5px 0;'><strong>Date:</strong> PEK</p>                     <p style='margin: 5px 0;'><strong>Location:</strong> Beijing</p>                     <a href="https://hyrox.com/event/hyrox-beijing/" target="_blank"                         style='display: inline-block;                                background-color: #007bff;                                color: white;                                padding: 5px 10px;                                text-decoration: none;                                border-radius: 3px;                                margin-top: 10px;'>                         Event Details                     </a>                 </div>                 </div>`)[0];
+                popup_8781e45c168500eacbfcbbd413418c04.setContent(html_b29a6346fd3326c0cdd29ec2dc95e542);
+            
+        
+
+        marker_095071875988bd9438245ecfd8098095.bindPopup(popup_8781e45c168500eacbfcbbd413418c04)
+        ;
+
+        
+    
+    
+            marker_095071875988bd9438245ecfd8098095.bindTooltip(
+                `<div>
+                     Beijing
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_095071875988bd9438245ecfd8098095.setIcon(icon_1c13e9367a1cc0fa37e36f01c8cb70ba);
+            
+    
+            var marker_0e1e033009d6204057cbedac5b96dbdd = L.marker(
+                [-31.9558967, 115.8605784],
+                {
+}
+            ).addTo(marker_cluster_26f52ce5cba1b155decfdfb8ea2473a6);
+        
+    
+            var icon_2c20fdb31b3bb139156b72bd72470607 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d00307cdf7aafe5ba4843be651b71f15 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_478e2bd1c97b2bc32ab7204e4644b602 = $(`<div id="html_478e2bd1c97b2bc32ab7204e4644b602" style="width: 100.0%; height: 100.0%;">                 <div style='font-family: Arial, sans-serif;'>                     <h3 style='color: #333; margin-bottom: 10px;'>HYROX Perth</h3>                     <p style='margin: 5px 0;'><strong>Date:</strong> PER</p>                     <p style='margin: 5px 0;'><strong>Location:</strong> Perth</p>                     <a href="https://hyrox.com/event/hyrox-perth/" target="_blank"                         style='display: inline-block;                                background-color: #007bff;                                color: white;                                padding: 5px 10px;                                text-decoration: none;                                border-radius: 3px;                                margin-top: 10px;'>                         Event Details                     </a>                 </div>                 </div>`)[0];
+                popup_d00307cdf7aafe5ba4843be651b71f15.setContent(html_478e2bd1c97b2bc32ab7204e4644b602);
+            
+        
+
+        marker_0e1e033009d6204057cbedac5b96dbdd.bindPopup(popup_d00307cdf7aafe5ba4843be651b71f15)
+        ;
+
+        
+    
+    
+            marker_0e1e033009d6204057cbedac5b96dbdd.bindTooltip(
+                `<div>
+                     Perth
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0e1e033009d6204057cbedac5b96dbdd.setIcon(icon_2c20fdb31b3bb139156b72bd72470607);
+            
+    
+            var marker_6b66a5071bc991cd617146c3ad8bc78e = L.marker(
+                [16.8680495, -99.8940182],
+                {
+}
+            ).addTo(marker_cluster_26f52ce5cba1b155decfdfb8ea2473a6);
+        
+    
+            var icon_c830243471caac9722d1f7b0806b92c6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8343a32e4a3d79a1f432e323ce920d06 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_86be8ad6253e3130cbfe9604224c09bd = $(`<div id="html_86be8ad6253e3130cbfe9604224c09bd" style="width: 100.0%; height: 100.0%;">                 <div style='font-family: Arial, sans-serif;'>                     <h3 style='color: #333; margin-bottom: 10px;'>Smart Fit HYROX Acapulco</h3>                     <p style='margin: 5px 0;'><strong>Date:</strong> ACA</p>                     <p style='margin: 5px 0;'><strong>Location:</strong> Acapulco</p>                     <a href="https://hyrox.com/event/smart-fit-hyrox-acapulco/" target="_blank"                         style='display: inline-block;                                background-color: #007bff;                                color: white;                                padding: 5px 10px;                                text-decoration: none;                                border-radius: 3px;                                margin-top: 10px;'>                         Event Details                     </a>                 </div>                 </div>`)[0];
+                popup_8343a32e4a3d79a1f432e323ce920d06.setContent(html_86be8ad6253e3130cbfe9604224c09bd);
+            
+        
+
+        marker_6b66a5071bc991cd617146c3ad8bc78e.bindPopup(popup_8343a32e4a3d79a1f432e323ce920d06)
+        ;
+
+        
+    
+    
+            marker_6b66a5071bc991cd617146c3ad8bc78e.bindTooltip(
+                `<div>
+                     Acapulco
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6b66a5071bc991cd617146c3ad8bc78e.setIcon(icon_c830243471caac9722d1f7b0806b92c6);
+            
+    
+            var marker_08e60f98f4397fe7207b06fb18d5a27e = L.marker(
+                [50.8579855, 5.6969882],
+                {
+}
+            ).addTo(marker_cluster_26f52ce5cba1b155decfdfb8ea2473a6);
+        
+    
+            var icon_d5a5276a429d97c8d2a6bfaad78e139e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2bb098171e41698e52120754575e2812 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cd7c20b38885d68382af48c043179127 = $(`<div id="html_cd7c20b38885d68382af48c043179127" style="width: 100.0%; height: 100.0%;">                 <div style='font-family: Arial, sans-serif;'>                     <h3 style='color: #333; margin-bottom: 10px;'>Sports World HYROX Maastricht</h3>                     <p style='margin: 5px 0;'><strong>Date:</strong> MAA</p>                     <p style='margin: 5px 0;'><strong>Location:</strong> Maastricht</p>                     <a href="https://hyrox.com/event/hyrox-maastricht/" target="_blank"                         style='display: inline-block;                                background-color: #007bff;                                color: white;                                padding: 5px 10px;                                text-decoration: none;                                border-radius: 3px;                                margin-top: 10px;'>                         Event Details                     </a>                 </div>                 </div>`)[0];
+                popup_2bb098171e41698e52120754575e2812.setContent(html_cd7c20b38885d68382af48c043179127);
+            
+        
+
+        marker_08e60f98f4397fe7207b06fb18d5a27e.bindPopup(popup_2bb098171e41698e52120754575e2812)
+        ;
+
+        
+    
+    
+            marker_08e60f98f4397fe7207b06fb18d5a27e.bindTooltip(
+                `<div>
+                     Maastricht
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_08e60f98f4397fe7207b06fb18d5a27e.setIcon(icon_d5a5276a429d97c8d2a6bfaad78e139e);
+            
+    
+            var marker_7b512915853a70482428625d0d67dc66 = L.marker(
+                [-23.5506507, -46.6333824],
+                {
+}
+            ).addTo(marker_cluster_26f52ce5cba1b155decfdfb8ea2473a6);
+        
+    
+            var icon_a18c35f485064f1ac67e63d7775cd9de = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_50389350709352d27c43766da652d0b5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_98649d42a30a2544af55ae3333d7c07e = $(`<div id="html_98649d42a30a2544af55ae3333d7c07e" style="width: 100.0%; height: 100.0%;">                 <div style='font-family: Arial, sans-serif;'>                     <h3 style='color: #333; margin-bottom: 10px;'>HYROX São Paulo</h3>                     <p style='margin: 5px 0;'><strong>Date:</strong> SP</p>                     <p style='margin: 5px 0;'><strong>Location:</strong> São Paulo</p>                     <a href="https://hyrox.com/event/hyrox-sao-paulo/" target="_blank"                         style='display: inline-block;                                background-color: #007bff;                                color: white;                                padding: 5px 10px;                                text-decoration: none;                                border-radius: 3px;                                margin-top: 10px;'>                         Event Details                     </a>                 </div>                 </div>`)[0];
+                popup_50389350709352d27c43766da652d0b5.setContent(html_98649d42a30a2544af55ae3333d7c07e);
+            
+        
+
+        marker_7b512915853a70482428625d0d67dc66.bindPopup(popup_50389350709352d27c43766da652d0b5)
+        ;
+
+        
+    
+    
+            marker_7b512915853a70482428625d0d67dc66.bindTooltip(
+                `<div>
+                     São Paulo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7b512915853a70482428625d0d67dc66.setIcon(icon_a18c35f485064f1ac67e63d7775cd9de);
+            
+    
+            var marker_dfb0c1504c4488af9d833e77ceee2079 = L.marker(
+                [59.9133301, 10.7389701],
+                {
+}
+            ).addTo(marker_cluster_26f52ce5cba1b155decfdfb8ea2473a6);
+        
+    
+            var icon_fb745fed22914ca31f967e65802ab5d1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2e532ba19c36955fedb06e0df22f3e0f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0fb7f1882db21d556f15c7e9e4a1b42e = $(`<div id="html_0fb7f1882db21d556f15c7e9e4a1b42e" style="width: 100.0%; height: 100.0%;">                 <div style='font-family: Arial, sans-serif;'>                     <h3 style='color: #333; margin-bottom: 10px;'>Adrenalin HYROX Oslo</h3>                     <p style='margin: 5px 0;'><strong>Date:</strong> OSL</p>                     <p style='margin: 5px 0;'><strong>Location:</strong> Oslo</p>                     <a href="https://hyrox.com/event/hyrox-oslo/" target="_blank"                         style='display: inline-block;                                background-color: #007bff;                                color: white;                                padding: 5px 10px;                                text-decoration: none;                                border-radius: 3px;                                margin-top: 10px;'>                         Event Details                     </a>                 </div>                 </div>`)[0];
+                popup_2e532ba19c36955fedb06e0df22f3e0f.setContent(html_0fb7f1882db21d556f15c7e9e4a1b42e);
+            
+        
+
+        marker_dfb0c1504c4488af9d833e77ceee2079.bindPopup(popup_2e532ba19c36955fedb06e0df22f3e0f)
+        ;
+
+        
+    
+    
+            marker_dfb0c1504c4488af9d833e77ceee2079.bindTooltip(
+                `<div>
+                     Oslo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_dfb0c1504c4488af9d833e77ceee2079.setIcon(icon_fb745fed22914ca31f967e65802ab5d1);
+            
+    
+            var marker_1e07aceb6cbc4ebe1097548b847a3d81 = L.marker(
+                [41.8933203, 12.4829321],
+                {
+}
+            ).addTo(marker_cluster_26f52ce5cba1b155decfdfb8ea2473a6);
+        
+    
+            var icon_511de86bfdce7325307ae10e7cd37c3b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_952ad8b01f42fab29524e94d3b17ef70 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a2fae0e9c6c1767a129fa480766b50c5 = $(`<div id="html_a2fae0e9c6c1767a129fa480766b50c5" style="width: 100.0%; height: 100.0%;">                 <div style='font-family: Arial, sans-serif;'>                     <h3 style='color: #333; margin-bottom: 10px;'>HYROX Roma</h3>                     <p style='margin: 5px 0;'><strong>Date:</strong> RM</p>                     <p style='margin: 5px 0;'><strong>Location:</strong> Rome</p>                     <a href="https://hyrox.com/event/hyrox-roma/" target="_blank"                         style='display: inline-block;                                background-color: #007bff;                                color: white;                                padding: 5px 10px;                                text-decoration: none;                                border-radius: 3px;                                margin-top: 10px;'>                         Event Details                     </a>                 </div>                 </div>`)[0];
+                popup_952ad8b01f42fab29524e94d3b17ef70.setContent(html_a2fae0e9c6c1767a129fa480766b50c5);
+            
+        
+
+        marker_1e07aceb6cbc4ebe1097548b847a3d81.bindPopup(popup_952ad8b01f42fab29524e94d3b17ef70)
+        ;
+
+        
+    
+    
+            marker_1e07aceb6cbc4ebe1097548b847a3d81.bindTooltip(
+                `<div>
+                     Rome
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1e07aceb6cbc4ebe1097548b847a3d81.setIcon(icon_511de86bfdce7325307ae10e7cd37c3b);
+            
+    
+            var marker_5f7ba26b58dcf7db90c0bc4c638bdfba = L.marker(
+                [53.550341, 10.000654],
+                {
+}
+            ).addTo(marker_cluster_26f52ce5cba1b155decfdfb8ea2473a6);
+        
+    
+            var icon_9df1a73925e83dc63860fd7da1340d02 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fb0025e7bd95a3a8fc2e70f678720655 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_262fb905e172b02793deda03519a0959 = $(`<div id="html_262fb905e172b02793deda03519a0959" style="width: 100.0%; height: 100.0%;">                 <div style='font-family: Arial, sans-serif;'>                     <h3 style='color: #333; margin-bottom: 10px;'>Intersport HYROX Hamburg</h3>                     <p style='margin: 5px 0;'><strong>Date:</strong> HAM</p>                     <p style='margin: 5px 0;'><strong>Location:</strong> Hamburg</p>                     <a href="https://hyrox.com/event/intersport-hyrox-hamburg/" target="_blank"                         style='display: inline-block;                                background-color: #007bff;                                color: white;                                padding: 5px 10px;                                text-decoration: none;                                border-radius: 3px;                                margin-top: 10px;'>                         Event Details                     </a>                 </div>                 </div>`)[0];
+                popup_fb0025e7bd95a3a8fc2e70f678720655.setContent(html_262fb905e172b02793deda03519a0959);
+            
+        
+
+        marker_5f7ba26b58dcf7db90c0bc4c638bdfba.bindPopup(popup_fb0025e7bd95a3a8fc2e70f678720655)
+        ;
+
+        
+    
+    
+            marker_5f7ba26b58dcf7db90c0bc4c638bdfba.bindTooltip(
+                `<div>
+                     Hamburg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5f7ba26b58dcf7db90c0bc4c638bdfba.setIcon(icon_9df1a73925e83dc63860fd7da1340d02);
+            
+    
+            var marker_e39e6cdc73caab1780eba27d21ff085c = L.marker(
+                [43.6534817, -79.3839347],
+                {
+}
+            ).addTo(marker_cluster_26f52ce5cba1b155decfdfb8ea2473a6);
+        
+    
+            var icon_e2d49d1452cdcea146ee60c78a34dc3b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ae8a3eca257d6c9b53fcce794701abba = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6bc4b4fd0a6225e81289d3e71514b799 = $(`<div id="html_6bc4b4fd0a6225e81289d3e71514b799" style="width: 100.0%; height: 100.0%;">                 <div style='font-family: Arial, sans-serif;'>                     <h3 style='color: #333; margin-bottom: 10px;'>F45 HYROX Toronto</h3>                     <p style='margin: 5px 0;'><strong>Date:</strong> TOR</p>                     <p style='margin: 5px 0;'><strong>Location:</strong> Toronto</p>                     <a href="https://hyrox.com/event/hyrox-toronto/" target="_blank"                         style='display: inline-block;                                background-color: #007bff;                                color: white;                                padding: 5px 10px;                                text-decoration: none;                                border-radius: 3px;                                margin-top: 10px;'>                         Event Details                     </a>                 </div>                 </div>`)[0];
+                popup_ae8a3eca257d6c9b53fcce794701abba.setContent(html_6bc4b4fd0a6225e81289d3e71514b799);
+            
+        
+
+        marker_e39e6cdc73caab1780eba27d21ff085c.bindPopup(popup_ae8a3eca257d6c9b53fcce794701abba)
+        ;
+
+        
+    
+    
+            marker_e39e6cdc73caab1780eba27d21ff085c.bindTooltip(
+                `<div>
+                     Toronto
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e39e6cdc73caab1780eba27d21ff085c.setIcon(icon_e2d49d1452cdcea146ee60c78a34dc3b);
+            
+    
+            var marker_43cf58a9990fc93b3d3150c07eddf171 = L.marker(
+                [54.4288032, 18.798327],
+                {
+}
+            ).addTo(marker_cluster_26f52ce5cba1b155decfdfb8ea2473a6);
+        
+    
+            var icon_38a4c6330a601a1905d74d72fb5c5923 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7754827b9d4dbc638fa4b8c452320175 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0b8aceea47b811be2895890049f71625 = $(`<div id="html_0b8aceea47b811be2895890049f71625" style="width: 100.0%; height: 100.0%;">                 <div style='font-family: Arial, sans-serif;'>                     <h3 style='color: #333; margin-bottom: 10px;'>HYROX GDANSK</h3>                     <p style='margin: 5px 0;'><strong>Date:</strong> GDN</p>                     <p style='margin: 5px 0;'><strong>Location:</strong> GDANSK</p>                     <a href="https://hyrox.com/event/hyrox-gdansk/" target="_blank"                         style='display: inline-block;                                background-color: #007bff;                                color: white;                                padding: 5px 10px;                                text-decoration: none;                                border-radius: 3px;                                margin-top: 10px;'>                         Event Details                     </a>                 </div>                 </div>`)[0];
+                popup_7754827b9d4dbc638fa4b8c452320175.setContent(html_0b8aceea47b811be2895890049f71625);
+            
+        
+
+        marker_43cf58a9990fc93b3d3150c07eddf171.bindPopup(popup_7754827b9d4dbc638fa4b8c452320175)
+        ;
+
+        
+    
+    
+            marker_43cf58a9990fc93b3d3150c07eddf171.bindTooltip(
+                `<div>
+                     GDANSK
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_43cf58a9990fc93b3d3150c07eddf171.setIcon(icon_38a4c6330a601a1905d74d72fb5c5923);
+            
+    
+            var marker_0fb24858d28d29521bac8a935acc9a33 = L.marker(
+                [39.4697065, -0.3763353],
+                {
+}
+            ).addTo(marker_cluster_26f52ce5cba1b155decfdfb8ea2473a6);
+        
+    
+            var icon_f0316cae5baf79c22bcc116ab3e55d84 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7dd57a88f1179162aba1eacedb22b222 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_15f342504ecaf2d03fa9b8ac97d14f82 = $(`<div id="html_15f342504ecaf2d03fa9b8ac97d14f82" style="width: 100.0%; height: 100.0%;">                 <div style='font-family: Arial, sans-serif;'>                     <h3 style='color: #333; margin-bottom: 10px;'>HYROX Valencia</h3>                     <p style='margin: 5px 0;'><strong>Date:</strong> VLC</p>                     <p style='margin: 5px 0;'><strong>Location:</strong> Valencia</p>                     <a href="https://hyrox.com/event/hyrox-valencia/" target="_blank"                         style='display: inline-block;                                background-color: #007bff;                                color: white;                                padding: 5px 10px;                                text-decoration: none;                                border-radius: 3px;                                margin-top: 10px;'>                         Event Details                     </a>                 </div>                 </div>`)[0];
+                popup_7dd57a88f1179162aba1eacedb22b222.setContent(html_15f342504ecaf2d03fa9b8ac97d14f82);
+            
+        
+
+        marker_0fb24858d28d29521bac8a935acc9a33.bindPopup(popup_7dd57a88f1179162aba1eacedb22b222)
+        ;
+
+        
+    
+    
+            marker_0fb24858d28d29521bac8a935acc9a33.bindTooltip(
+                `<div>
+                     Valencia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0fb24858d28d29521bac8a935acc9a33.setIcon(icon_f0316cae5baf79c22bcc116ab3e55d84);
+            
+    
+            var marker_13035895d7e9af6a4b0a3f92fd959239 = L.marker(
+                [48.8588897, 2.320041],
+                {
+}
+            ).addTo(marker_cluster_26f52ce5cba1b155decfdfb8ea2473a6);
+        
+    
+            var icon_0d115283dd4561c222463c544a4959eb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8e31f1a2bbc8375992609ea29a12d9f9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5f27433178c1259f5e8502137dbcf761 = $(`<div id="html_5f27433178c1259f5e8502137dbcf761" style="width: 100.0%; height: 100.0%;">                 <div style='font-family: Arial, sans-serif;'>                     <h3 style='color: #333; margin-bottom: 10px;'>FITNESS PARK HYROX PARIS</h3>                     <p style='margin: 5px 0;'><strong>Date:</strong> PAR</p>                     <p style='margin: 5px 0;'><strong>Location:</strong> PARIS</p>                     <a href="https://hyrox.com/event/hyrox-paris/" target="_blank"                         style='display: inline-block;                                background-color: #007bff;                                color: white;                                padding: 5px 10px;                                text-decoration: none;                                border-radius: 3px;                                margin-top: 10px;'>                         Event Details                     </a>                 </div>                 </div>`)[0];
+                popup_8e31f1a2bbc8375992609ea29a12d9f9.setContent(html_5f27433178c1259f5e8502137dbcf761);
+            
+        
+
+        marker_13035895d7e9af6a4b0a3f92fd959239.bindPopup(popup_8e31f1a2bbc8375992609ea29a12d9f9)
+        ;
+
+        
+    
+    
+            marker_13035895d7e9af6a4b0a3f92fd959239.bindTooltip(
+                `<div>
+                     PARIS
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_13035895d7e9af6a4b0a3f92fd959239.setIcon(icon_0d115283dd4561c222463c544a4959eb);
+            
+    
+            var marker_7c7f49788b62bc63ddf3a2c8908b8a3a = L.marker(
+                [52.4796992, -1.9026911],
+                {
+}
+            ).addTo(marker_cluster_26f52ce5cba1b155decfdfb8ea2473a6);
+        
+    
+            var icon_e37b226e43389cf02d3e1c5104ce0831 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a15673da099e76cdfa1d7b6afa013b6f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fd3cdf043069b373c3bd7a1ac86da2fc = $(`<div id="html_fd3cdf043069b373c3bd7a1ac86da2fc" style="width: 100.0%; height: 100.0%;">                 <div style='font-family: Arial, sans-serif;'>                     <h3 style='color: #333; margin-bottom: 10px;'>HYROX Birmingham</h3>                     <p style='margin: 5px 0;'><strong>Date:</strong> BIR</p>                     <p style='margin: 5px 0;'><strong>Location:</strong> Birmingham</p>                     <a href="https://hyrox.com/event/hyrox-birmingham/" target="_blank"                         style='display: inline-block;                                background-color: #007bff;                                color: white;                                padding: 5px 10px;                                text-decoration: none;                                border-radius: 3px;                                margin-top: 10px;'>                         Event Details                     </a>                 </div>                 </div>`)[0];
+                popup_a15673da099e76cdfa1d7b6afa013b6f.setContent(html_fd3cdf043069b373c3bd7a1ac86da2fc);
+            
+        
+
+        marker_7c7f49788b62bc63ddf3a2c8908b8a3a.bindPopup(popup_a15673da099e76cdfa1d7b6afa013b6f)
+        ;
+
+        
+    
+    
+            marker_7c7f49788b62bc63ddf3a2c8908b8a3a.bindTooltip(
+                `<div>
+                     Birmingham
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7c7f49788b62bc63ddf3a2c8908b8a3a.setIcon(icon_e37b226e43389cf02d3e1c5104ce0831);
+            
+    
+            var marker_2ed7aaa1e9b645661d046ae708818dab = L.marker(
+                [48.7784485, 9.1800132],
+                {
+}
+            ).addTo(marker_cluster_26f52ce5cba1b155decfdfb8ea2473a6);
+        
+    
+            var icon_e11ffb642a13de037a9f3427f6d2a7f7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5327c53c8c407318ec8665e69189dd57 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bb42b3fe35e87a18b7035a4391aa5fad = $(`<div id="html_bb42b3fe35e87a18b7035a4391aa5fad" style="width: 100.0%; height: 100.0%;">                 <div style='font-family: Arial, sans-serif;'>                     <h3 style='color: #333; margin-bottom: 10px;'>HYROX Stuttgart</h3>                     <p style='margin: 5px 0;'><strong>Date:</strong> STR</p>                     <p style='margin: 5px 0;'><strong>Location:</strong> Stuttgart</p>                     <a href="https://hyrox.com/event/hyrox-stuttgart/" target="_blank"                         style='display: inline-block;                                background-color: #007bff;                                color: white;                                padding: 5px 10px;                                text-decoration: none;                                border-radius: 3px;                                margin-top: 10px;'>                         Event Details                     </a>                 </div>                 </div>`)[0];
+                popup_5327c53c8c407318ec8665e69189dd57.setContent(html_bb42b3fe35e87a18b7035a4391aa5fad);
+            
+        
+
+        marker_2ed7aaa1e9b645661d046ae708818dab.bindPopup(popup_5327c53c8c407318ec8665e69189dd57)
+        ;
+
+        
+    
+    
+            marker_2ed7aaa1e9b645661d046ae708818dab.bindTooltip(
+                `<div>
+                     Stuttgart
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2ed7aaa1e9b645661d046ae708818dab.setIcon(icon_e11ffb642a13de037a9f3427f6d2a7f7);
+            
+    
+            var marker_9b3b46844538f76596eedebca9ae2df7 = L.marker(
+                [19.3207722, -99.1514678],
+                {
+}
+            ).addTo(marker_cluster_26f52ce5cba1b155decfdfb8ea2473a6);
+        
+    
+            var icon_4af41b9c374dc0bad54e2e500e2d989c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_580276dfd20b9132b19c997f471277e4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4805ec92d09ee9a06fb5ffe713c68b22 = $(`<div id="html_4805ec92d09ee9a06fb5ffe713c68b22" style="width: 100.0%; height: 100.0%;">                 <div style='font-family: Arial, sans-serif;'>                     <h3 style='color: #333; margin-bottom: 10px;'>HYROX Ciudad de México</h3>                     <p style='margin: 5px 0;'><strong>Date:</strong> MEX</p>                     <p style='margin: 5px 0;'><strong>Location:</strong> Mexico City</p>                     <a href="https://hyrox.com/event/hyrox-ciudad-de-mexico/" target="_blank"                         style='display: inline-block;                                background-color: #007bff;                                color: white;                                padding: 5px 10px;                                text-decoration: none;                                border-radius: 3px;                                margin-top: 10px;'>                         Event Details                     </a>                 </div>                 </div>`)[0];
+                popup_580276dfd20b9132b19c997f471277e4.setContent(html_4805ec92d09ee9a06fb5ffe713c68b22);
+            
+        
+
+        marker_9b3b46844538f76596eedebca9ae2df7.bindPopup(popup_580276dfd20b9132b19c997f471277e4)
+        ;
+
+        
+    
+    
+            marker_9b3b46844538f76596eedebca9ae2df7.bindTooltip(
+                `<div>
+                     Mexico City
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9b3b46844538f76596eedebca9ae2df7.setIcon(icon_4af41b9c374dc0bad54e2e500e2d989c);
+            
+    
+            var marker_859baa5f73c7958d0a09b4e61388e7e0 = L.marker(
+                [37.5666791, 126.9782914],
+                {
+}
+            ).addTo(marker_cluster_26f52ce5cba1b155decfdfb8ea2473a6);
+        
+    
+            var icon_32311cf68064509112052d80803adf8a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f8902905674f659bab46ea76c19fcbdf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d4bd2012015042a8ccd7f925da024eed = $(`<div id="html_d4bd2012015042a8ccd7f925da024eed" style="width: 100.0%; height: 100.0%;">                 <div style='font-family: Arial, sans-serif;'>                     <h3 style='color: #333; margin-bottom: 10px;'>HYROX Seoul</h3>                     <p style='margin: 5px 0;'><strong>Date:</strong> SEL</p>                     <p style='margin: 5px 0;'><strong>Location:</strong> Seoul</p>                     <a href="https://hyrox.com/event/hyrox-seoul/" target="_blank"                         style='display: inline-block;                                background-color: #007bff;                                color: white;                                padding: 5px 10px;                                text-decoration: none;                                border-radius: 3px;                                margin-top: 10px;'>                         Event Details                     </a>                 </div>                 </div>`)[0];
+                popup_f8902905674f659bab46ea76c19fcbdf.setContent(html_d4bd2012015042a8ccd7f925da024eed);
+            
+        
+
+        marker_859baa5f73c7958d0a09b4e61388e7e0.bindPopup(popup_f8902905674f659bab46ea76c19fcbdf)
+        ;
+
+        
+    
+    
+            marker_859baa5f73c7958d0a09b4e61388e7e0.bindTooltip(
+                `<div>
+                     Seoul
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_859baa5f73c7958d0a09b4e61388e7e0.setIcon(icon_32311cf68064509112052d80803adf8a);
+            
+    
+            var marker_90037a4384edd7d54006a08cecd0caed = L.marker(
+                [53.3493795, -6.2605593],
+                {
+}
+            ).addTo(marker_cluster_26f52ce5cba1b155decfdfb8ea2473a6);
+        
+    
+            var icon_4eba4e54b0edb7bca5f7c67777e1c1c5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_77b087476fc9b38f35e7dc8794c38073 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b7fcebd33be8d84d3c259646cd03f672 = $(`<div id="html_b7fcebd33be8d84d3c259646cd03f672" style="width: 100.0%; height: 100.0%;">                 <div style='font-family: Arial, sans-serif;'>                     <h3 style='color: #333; margin-bottom: 10px;'>Sports Direct HYROX Dublin</h3>                     <p style='margin: 5px 0;'><strong>Date:</strong> DUB</p>                     <p style='margin: 5px 0;'><strong>Location:</strong> Dublin</p>                     <a href="https://hyrox.com/event/hyrox-dublin/" target="_blank"                         style='display: inline-block;                                background-color: #007bff;                                color: white;                                padding: 5px 10px;                                text-decoration: none;                                border-radius: 3px;                                margin-top: 10px;'>                         Event Details                     </a>                 </div>                 </div>`)[0];
+                popup_77b087476fc9b38f35e7dc8794c38073.setContent(html_b7fcebd33be8d84d3c259646cd03f672);
+            
+        
+
+        marker_90037a4384edd7d54006a08cecd0caed.bindPopup(popup_77b087476fc9b38f35e7dc8794c38073)
+        ;
+
+        
+    
+    
+            marker_90037a4384edd7d54006a08cecd0caed.bindTooltip(
+                `<div>
+                     Dublin
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_90037a4384edd7d54006a08cecd0caed.setIcon(icon_4eba4e54b0edb7bca5f7c67777e1c1c5);
+            
+    
+            var marker_d9a79b08c8fc9daca627e2715ad60b73 = L.marker(
+                [41.8755616, -87.6244212],
+                {
+}
+            ).addTo(marker_cluster_26f52ce5cba1b155decfdfb8ea2473a6);
+        
+    
+            var icon_828501d1a9159c6c3795a19ddd423262 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c1f456a129c5f50e06b9be1dd0bae12e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_770b25b7f5f3f2f07c3de7c0bc6f84dc = $(`<div id="html_770b25b7f5f3f2f07c3de7c0bc6f84dc" style="width: 100.0%; height: 100.0%;">                 <div style='font-family: Arial, sans-serif;'>                     <h3 style='color: #333; margin-bottom: 10px;'>HYROX Chicago</h3>                     <p style='margin: 5px 0;'><strong>Date:</strong> CHI</p>                     <p style='margin: 5px 0;'><strong>Location:</strong> Chicago</p>                     <a href="https://hyrox.com/event/hyrox-chicago/" target="_blank"                         style='display: inline-block;                                background-color: #007bff;                                color: white;                                padding: 5px 10px;                                text-decoration: none;                                border-radius: 3px;                                margin-top: 10px;'>                         Event Details                     </a>                 </div>                 </div>`)[0];
+                popup_c1f456a129c5f50e06b9be1dd0bae12e.setContent(html_770b25b7f5f3f2f07c3de7c0bc6f84dc);
+            
+        
+
+        marker_d9a79b08c8fc9daca627e2715ad60b73.bindPopup(popup_c1f456a129c5f50e06b9be1dd0bae12e)
+        ;
+
+        
+    
+    
+            marker_d9a79b08c8fc9daca627e2715ad60b73.bindTooltip(
+                `<div>
+                     Chicago
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d9a79b08c8fc9daca627e2715ad60b73.setIcon(icon_828501d1a9159c6c3795a19ddd423262);
+            
+    
+            var marker_e7551fd1a5848e30160759c0991e6d8a = L.marker(
+                [44.841225, -0.5800364],
+                {
+}
+            ).addTo(marker_cluster_26f52ce5cba1b155decfdfb8ea2473a6);
+        
+    
+            var icon_b3cb1da0e90fd48372ddb6da8bff613f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b928a5d58eaa0eb65baf979a8bc0d333 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2f136fe39b1e047f961a6c91af12abf7 = $(`<div id="html_2f136fe39b1e047f961a6c91af12abf7" style="width: 100.0%; height: 100.0%;">                 <div style='font-family: Arial, sans-serif;'>                     <h3 style='color: #333; margin-bottom: 10px;'>HYROX BORDEAUX</h3>                     <p style='margin: 5px 0;'><strong>Date:</strong> BDX</p>                     <p style='margin: 5px 0;'><strong>Location:</strong> BORDEAUX</p>                     <a href="https://hyrox.com/event/hyrox-bordeaux/" target="_blank"                         style='display: inline-block;                                background-color: #007bff;                                color: white;                                padding: 5px 10px;                                text-decoration: none;                                border-radius: 3px;                                margin-top: 10px;'>                         Event Details                     </a>                 </div>                 </div>`)[0];
+                popup_b928a5d58eaa0eb65baf979a8bc0d333.setContent(html_2f136fe39b1e047f961a6c91af12abf7);
+            
+        
+
+        marker_e7551fd1a5848e30160759c0991e6d8a.bindPopup(popup_b928a5d58eaa0eb65baf979a8bc0d333)
+        ;
+
+        
+    
+    
+            marker_e7551fd1a5848e30160759c0991e6d8a.bindTooltip(
+                `<div>
+                     BORDEAUX
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e7551fd1a5848e30160759c0991e6d8a.setIcon(icon_b3cb1da0e90fd48372ddb6da8bff613f);
+            
+    
+            var marker_624613a98263d55f180eb15652e9631f = L.marker(
+                [32.7762719, -96.7968559],
+                {
+}
+            ).addTo(marker_cluster_26f52ce5cba1b155decfdfb8ea2473a6);
+        
+    
+            var icon_91693b15f8cfa6982160c8d165709bfa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bc7296d8ec6dfcecfd0f5ff5f403c3d0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c4b94857eff8250bfbebba6afa64afc0 = $(`<div id="html_c4b94857eff8250bfbebba6afa64afc0" style="width: 100.0%; height: 100.0%;">                 <div style='font-family: Arial, sans-serif;'>                     <h3 style='color: #333; margin-bottom: 10px;'>HYROX Dallas</h3>                     <p style='margin: 5px 0;'><strong>Date:</strong> DAL</p>                     <p style='margin: 5px 0;'><strong>Location:</strong> Dallas</p>                     <a href="https://hyrox.com/event/hyrox-dallas/" target="_blank"                         style='display: inline-block;                                background-color: #007bff;                                color: white;                                padding: 5px 10px;                                text-decoration: none;                                border-radius: 3px;                                margin-top: 10px;'>                         Event Details                     </a>                 </div>                 </div>`)[0];
+                popup_bc7296d8ec6dfcecfd0f5ff5f403c3d0.setContent(html_c4b94857eff8250bfbebba6afa64afc0);
+            
+        
+
+        marker_624613a98263d55f180eb15652e9631f.bindPopup(popup_bc7296d8ec6dfcecfd0f5ff5f403c3d0)
+        ;
+
+        
+    
+    
+            marker_624613a98263d55f180eb15652e9631f.bindTooltip(
+                `<div>
+                     Dallas
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_624613a98263d55f180eb15652e9631f.setIcon(icon_91693b15f8cfa6982160c8d165709bfa);
+            
+    
+            var marker_d42e5966d1e785fe96459d79a82e1525 = L.marker(
+                [40.4167047, -3.7035825],
+                {
+}
+            ).addTo(marker_cluster_26f52ce5cba1b155decfdfb8ea2473a6);
+        
+    
+            var icon_0f4a0c41e72d3ddf0b73ce72e897bd21 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f77e83e47a58a4ed3c262b3cc6138cb0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_100689bc99b1fb4cc3d2cd2e77737ac2 = $(`<div id="html_100689bc99b1fb4cc3d2cd2e77737ac2" style="width: 100.0%; height: 100.0%;">                 <div style='font-family: Arial, sans-serif;'>                     <h3 style='color: #333; margin-bottom: 10px;'>HYROX Madrid</h3>                     <p style='margin: 5px 0;'><strong>Date:</strong> MAD</p>                     <p style='margin: 5px 0;'><strong>Location:</strong> Madrid</p>                     <a href="https://hyrox.com/event/hyrox-madrid/" target="_blank"                         style='display: inline-block;                                background-color: #007bff;                                color: white;                                padding: 5px 10px;                                text-decoration: none;                                border-radius: 3px;                                margin-top: 10px;'>                         Event Details                     </a>                 </div>                 </div>`)[0];
+                popup_f77e83e47a58a4ed3c262b3cc6138cb0.setContent(html_100689bc99b1fb4cc3d2cd2e77737ac2);
+            
+        
+
+        marker_d42e5966d1e785fe96459d79a82e1525.bindPopup(popup_f77e83e47a58a4ed3c262b3cc6138cb0)
+        ;
+
+        
+    
+    
+            marker_d42e5966d1e785fe96459d79a82e1525.bindTooltip(
+                `<div>
+                     Madrid
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d42e5966d1e785fe96459d79a82e1525.setIcon(icon_0f4a0c41e72d3ddf0b73ce72e897bd21);
+            
+    
+            var marker_6b1b7f560d75d1c19dfee061841c9659 = L.marker(
+                [52.0907006, 5.1215634],
+                {
+}
+            ).addTo(marker_cluster_26f52ce5cba1b155decfdfb8ea2473a6);
+        
+    
+            var icon_27130fa464f0fb339491e1aeff611e44 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5972c02224a99c24853ba71c36b25252 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a5f98c39523bc74688882d57c5dc60d2 = $(`<div id="html_a5f98c39523bc74688882d57c5dc60d2" style="width: 100.0%; height: 100.0%;">                 <div style='font-family: Arial, sans-serif;'>                     <h3 style='color: #333; margin-bottom: 10px;'>HYROX Utrecht</h3>                     <p style='margin: 5px 0;'><strong>Date:</strong> UTR</p>                     <p style='margin: 5px 0;'><strong>Location:</strong> Utrecht</p>                     <a href="https://hyrox.com/event/hyrox-utrecht/" target="_blank"                         style='display: inline-block;                                background-color: #007bff;                                color: white;                                padding: 5px 10px;                                text-decoration: none;                                border-radius: 3px;                                margin-top: 10px;'>                         Event Details                     </a>                 </div>                 </div>`)[0];
+                popup_5972c02224a99c24853ba71c36b25252.setContent(html_a5f98c39523bc74688882d57c5dc60d2);
+            
+        
+
+        marker_6b1b7f560d75d1c19dfee061841c9659.bindPopup(popup_5972c02224a99c24853ba71c36b25252)
+        ;
+
+        
+    
+    
+            marker_6b1b7f560d75d1c19dfee061841c9659.bindTooltip(
+                `<div>
+                     Utrecht
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6b1b7f560d75d1c19dfee061841c9659.setIcon(icon_27130fa464f0fb339491e1aeff611e44);
+            
+    
+            var marker_603f539c79b5e5791b0a61ddd181e919 = L.marker(
+                [-22.9110137, -43.2093727],
+                {
+}
+            ).addTo(marker_cluster_26f52ce5cba1b155decfdfb8ea2473a6);
+        
+    
+            var icon_d0eacf66fb2071be1c2b07dccdc73715 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_056b5eb26298befa00d0319cc4a68441 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_43010d0dbf768731f8fb177e86e739fe = $(`<div id="html_43010d0dbf768731f8fb177e86e739fe" style="width: 100.0%; height: 100.0%;">                 <div style='font-family: Arial, sans-serif;'>                     <h3 style='color: #333; margin-bottom: 10px;'>HYROX Rio de Janeiro</h3>                     <p style='margin: 5px 0;'><strong>Date:</strong> RIO</p>                     <p style='margin: 5px 0;'><strong>Location:</strong> Rio de Janeiro</p>                     <a href="https://hyrox.com/event/hyrox-rio-de-janeiro/" target="_blank"                         style='display: inline-block;                                background-color: #007bff;                                color: white;                                padding: 5px 10px;                                text-decoration: none;                                border-radius: 3px;                                margin-top: 10px;'>                         Event Details                     </a>                 </div>                 </div>`)[0];
+                popup_056b5eb26298befa00d0319cc4a68441.setContent(html_43010d0dbf768731f8fb177e86e739fe);
+            
+        
+
+        marker_603f539c79b5e5791b0a61ddd181e919.bindPopup(popup_056b5eb26298befa00d0319cc4a68441)
+        ;
+
+        
+    
+    
+            marker_603f539c79b5e5791b0a61ddd181e919.bindTooltip(
+                `<div>
+                     Rio de Janeiro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_603f539c79b5e5791b0a61ddd181e919.setIcon(icon_d0eacf66fb2071be1c2b07dccdc73715);
+            
+    
+            var marker_5b83f414ba5dbf4eb139d838793e7adf = L.marker(
+                [51.4893335, -0.1440551],
+                {
+}
+            ).addTo(marker_cluster_26f52ce5cba1b155decfdfb8ea2473a6);
+        
+    
+            var icon_51b73a843b2e77438b8f019bbca75548 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9d259ae6cd954482061a335c5dd0ab15 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6be7e1ac366d7f374b7428be88e69163 = $(`<div id="html_6be7e1ac366d7f374b7428be88e69163" style="width: 100.0%; height: 100.0%;">                 <div style='font-family: Arial, sans-serif;'>                     <h3 style='color: #333; margin-bottom: 10px;'>HYROX London</h3>                     <p style='margin: 5px 0;'><strong>Date:</strong> LON</p>                     <p style='margin: 5px 0;'><strong>Location:</strong> London</p>                     <a href="https://hyrox.com/event/hyrox-london-excel/" target="_blank"                         style='display: inline-block;                                background-color: #007bff;                                color: white;                                padding: 5px 10px;                                text-decoration: none;                                border-radius: 3px;                                margin-top: 10px;'>                         Event Details                     </a>                 </div>                 </div>`)[0];
+                popup_9d259ae6cd954482061a335c5dd0ab15.setContent(html_6be7e1ac366d7f374b7428be88e69163);
+            
+        
+
+        marker_5b83f414ba5dbf4eb139d838793e7adf.bindPopup(popup_9d259ae6cd954482061a335c5dd0ab15)
+        ;
+
+        
+    
+    
+            marker_5b83f414ba5dbf4eb139d838793e7adf.bindTooltip(
+                `<div>
+                     London
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5b83f414ba5dbf4eb139d838793e7adf.setIcon(icon_51b73a843b2e77438b8f019bbca75548);
+            
+    
+            var marker_22753058f33b1049251e1414128d2e6a = L.marker(
+                [45.4424977, 10.9857377],
+                {
+}
+            ).addTo(marker_cluster_26f52ce5cba1b155decfdfb8ea2473a6);
+        
+    
+            var icon_b69f496f455d2d39f0277d49e676ed28 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_82352b492be98a26a53c0240995351e2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fb1ed1bf36a0108de12704c89f4ae17e = $(`<div id="html_fb1ed1bf36a0108de12704c89f4ae17e" style="width: 100.0%; height: 100.0%;">                 <div style='font-family: Arial, sans-serif;'>                     <h3 style='color: #333; margin-bottom: 10px;'>HYROX Verona</h3>                     <p style='margin: 5px 0;'><strong>Date:</strong> VR</p>                     <p style='margin: 5px 0;'><strong>Location:</strong> Verona</p>                     <a href="https://hyrox.com/event/hyrox-verona/" target="_blank"                         style='display: inline-block;                                background-color: #007bff;                                color: white;                                padding: 5px 10px;                                text-decoration: none;                                border-radius: 3px;                                margin-top: 10px;'>                         Event Details                     </a>                 </div>                 </div>`)[0];
+                popup_82352b492be98a26a53c0240995351e2.setContent(html_fb1ed1bf36a0108de12704c89f4ae17e);
+            
+        
+
+        marker_22753058f33b1049251e1414128d2e6a.bindPopup(popup_82352b492be98a26a53c0240995351e2)
+        ;
+
+        
+    
+    
+            marker_22753058f33b1049251e1414128d2e6a.bindTooltip(
+                `<div>
+                     Verona
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_22753058f33b1049251e1414128d2e6a.setIcon(icon_b69f496f455d2d39f0277d49e676ed28);
+            
+    
+            var marker_b1ef511eb631c0313238a24394492873 = L.marker(
+                [-37.8142454, 144.9631732],
+                {
+}
+            ).addTo(marker_cluster_26f52ce5cba1b155decfdfb8ea2473a6);
+        
+    
+            var icon_35a86ce86b36a322a38955f39bd2211a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_312381b66f458e7780674f59e9ea5bfe = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_49316c998a08c8871596b1d5f2a3596c = $(`<div id="html_49316c998a08c8871596b1d5f2a3596c" style="width: 100.0%; height: 100.0%;">                 <div style='font-family: Arial, sans-serif;'>                     <h3 style='color: #333; margin-bottom: 10px;'>HYROX Melbourne</h3>                     <p style='margin: 5px 0;'><strong>Date:</strong> MEL</p>                     <p style='margin: 5px 0;'><strong>Location:</strong> Melbourne</p>                     <a href="https://hyrox.com/event/hyrox-melbourne/" target="_blank"                         style='display: inline-block;                                background-color: #007bff;                                color: white;                                padding: 5px 10px;                                text-decoration: none;                                border-radius: 3px;                                margin-top: 10px;'>                         Event Details                     </a>                 </div>                 </div>`)[0];
+                popup_312381b66f458e7780674f59e9ea5bfe.setContent(html_49316c998a08c8871596b1d5f2a3596c);
+            
+        
+
+        marker_b1ef511eb631c0313238a24394492873.bindPopup(popup_312381b66f458e7780674f59e9ea5bfe)
+        ;
+
+        
+    
+    
+            marker_b1ef511eb631c0313238a24394492873.bindTooltip(
+                `<div>
+                     Melbourne
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b1ef511eb631c0313238a24394492873.setIcon(icon_35a86ce86b36a322a38955f39bd2211a);
+            
+    
+            var marker_a7e3172aae3672fe8695469c8661feac = L.marker(
+                [50.1106444, 8.6820917],
+                {
+}
+            ).addTo(marker_cluster_26f52ce5cba1b155decfdfb8ea2473a6);
+        
+    
+            var icon_3cade8756fdd781c364bd9be65977b29 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a415a9d95c2fac655971d77637bf2032 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c25e68eb462fb1a70c72effedae2b8a8 = $(`<div id="html_c25e68eb462fb1a70c72effedae2b8a8" style="width: 100.0%; height: 100.0%;">                 <div style='font-family: Arial, sans-serif;'>                     <h3 style='color: #333; margin-bottom: 10px;'>HYROX Frankfurt</h3>                     <p style='margin: 5px 0;'><strong>Date:</strong> FRA</p>                     <p style='margin: 5px 0;'><strong>Location:</strong> Frankfurt</p>                     <a href="https://hyrox.com/event/hyrox-frankfurt/" target="_blank"                         style='display: inline-block;                                background-color: #007bff;                                color: white;                                padding: 5px 10px;                                text-decoration: none;                                border-radius: 3px;                                margin-top: 10px;'>                         Event Details                     </a>                 </div>                 </div>`)[0];
+                popup_a415a9d95c2fac655971d77637bf2032.setContent(html_c25e68eb462fb1a70c72effedae2b8a8);
+            
+        
+
+        marker_a7e3172aae3672fe8695469c8661feac.bindPopup(popup_a415a9d95c2fac655971d77637bf2032)
+        ;
+
+        
+    
+    
+            marker_a7e3172aae3672fe8695469c8661feac.bindTooltip(
+                `<div>
+                     Frankfurt
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a7e3172aae3672fe8695469c8661feac.setIcon(icon_3cade8756fdd781c364bd9be65977b29);
+            
+    
+            var marker_49757d68792961fc0a708ed0d1fa87c9 = L.marker(
+                [33.8347516, -117.911732],
+                {
+}
+            ).addTo(marker_cluster_26f52ce5cba1b155decfdfb8ea2473a6);
+        
+    
+            var icon_98454ffb6c2755fa87c23f536e4cd210 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7147031fa354a43e796779b32ad14c5d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2f3e5081060bbb29c4cb6e71a3e50230 = $(`<div id="html_2f3e5081060bbb29c4cb6e71a3e50230" style="width: 100.0%; height: 100.0%;">                 <div style='font-family: Arial, sans-serif;'>                     <h3 style='color: #333; margin-bottom: 10px;'>HYROX Anaheim</h3>                     <p style='margin: 5px 0;'><strong>Date:</strong> ANA</p>                     <p style='margin: 5px 0;'><strong>Location:</strong> Anaheim</p>                     <a href="https://hyrox.com/event/hyrox-anaheim/" target="_blank"                         style='display: inline-block;                                background-color: #007bff;                                color: white;                                padding: 5px 10px;                                text-decoration: none;                                border-radius: 3px;                                margin-top: 10px;'>                         Event Details                     </a>                 </div>                 </div>`)[0];
+                popup_7147031fa354a43e796779b32ad14c5d.setContent(html_2f3e5081060bbb29c4cb6e71a3e50230);
+            
+        
+
+        marker_49757d68792961fc0a708ed0d1fa87c9.bindPopup(popup_7147031fa354a43e796779b32ad14c5d)
+        ;
+
+        
+    
+    
+            marker_49757d68792961fc0a708ed0d1fa87c9.bindTooltip(
+                `<div>
+                     Anaheim
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_49757d68792961fc0a708ed0d1fa87c9.setIcon(icon_98454ffb6c2755fa87c23f536e4cd210);
+            
+    
+            var marker_8a1d011b21c551be51003c5713aa8b17 = L.marker(
+                [52.4082663, 16.9335199],
+                {
+}
+            ).addTo(marker_cluster_26f52ce5cba1b155decfdfb8ea2473a6);
+        
+    
+            var icon_6160cd4a44ee2cc36bdd34dbb71ea782 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8d7130e99fab3eaa4bbe768740b39b87 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_241da53e46c98b0a0ea63d09c843da5a = $(`<div id="html_241da53e46c98b0a0ea63d09c843da5a" style="width: 100.0%; height: 100.0%;">                 <div style='font-family: Arial, sans-serif;'>                     <h3 style='color: #333; margin-bottom: 10px;'>HYROX POZNAN</h3>                     <p style='margin: 5px 0;'><strong>Date:</strong> POZ</p>                     <p style='margin: 5px 0;'><strong>Location:</strong> POZNAN</p>                     <a href="https://hyrox.com/event/hyrox-poznan/" target="_blank"                         style='display: inline-block;                                background-color: #007bff;                                color: white;                                padding: 5px 10px;                                text-decoration: none;                                border-radius: 3px;                                margin-top: 10px;'>                         Event Details                     </a>                 </div>                 </div>`)[0];
+                popup_8d7130e99fab3eaa4bbe768740b39b87.setContent(html_241da53e46c98b0a0ea63d09c843da5a);
+            
+        
+
+        marker_8a1d011b21c551be51003c5713aa8b17.bindPopup(popup_8d7130e99fab3eaa4bbe768740b39b87)
+        ;
+
+        
+    
+    
+            marker_8a1d011b21c551be51003c5713aa8b17.bindTooltip(
+                `<div>
+                     POZNAN
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8a1d011b21c551be51003c5713aa8b17.setIcon(icon_6160cd4a44ee2cc36bdd34dbb71ea782);
+            
+    
+            var marker_553741494ab88a5c5a3bf22543fa6eb9 = L.marker(
+                [59.2428446, 18.0905794],
+                {
+}
+            ).addTo(marker_cluster_26f52ce5cba1b155decfdfb8ea2473a6);
+        
+    
+            var icon_7b7dda362dbd24988ec88f3a2c81753f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_783c58742a2a5168fd30892b8a4c7099 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9d60389a341cd453784394caaa49fc9d = $(`<div id="html_9d60389a341cd453784394caaa49fc9d" style="width: 100.0%; height: 100.0%;">                 <div style='font-family: Arial, sans-serif;'>                     <h3 style='color: #333; margin-bottom: 10px;'>INTERSPORT HYROX Stockholm</h3>                     <p style='margin: 5px 0;'><strong>Date:</strong> STO</p>                     <p style='margin: 5px 0;'><strong>Location:</strong> INTERSPORT  Stockholm</p>                     <a href="https://hyrox.com/event/hyrox-stockholm/" target="_blank"                         style='display: inline-block;                                background-color: #007bff;                                color: white;                                padding: 5px 10px;                                text-decoration: none;                                border-radius: 3px;                                margin-top: 10px;'>                         Event Details                     </a>                 </div>                 </div>`)[0];
+                popup_783c58742a2a5168fd30892b8a4c7099.setContent(html_9d60389a341cd453784394caaa49fc9d);
+            
+        
+
+        marker_553741494ab88a5c5a3bf22543fa6eb9.bindPopup(popup_783c58742a2a5168fd30892b8a4c7099)
+        ;
+
+        
+    
+    
+            marker_553741494ab88a5c5a3bf22543fa6eb9.bindTooltip(
+                `<div>
+                     INTERSPORT  Stockholm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_553741494ab88a5c5a3bf22543fa6eb9.setIcon(icon_7b7dda362dbd24988ec88f3a2c81753f);
+            
+    
+            marker_cluster_26f52ce5cba1b155decfdfb8ea2473a6.addTo(map_0e65a0d0988c0d9e79819e5be14495f3);
+        
+</script>
+</html>
